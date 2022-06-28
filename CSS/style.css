@@ -1,0 +1,213 @@
+body {
+    padding: 0;
+    margin: 0;
+    letter-spacing: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+header {
+    text-align: center;
+}
+
+header h1 {
+    color: white;
+    background-color: rgb(18, 86, 150);
+    width: 700px;
+    padding: 25px;
+    margin: 35px auto;
+}
+
+
+header h3 {
+    width: 150px;
+    padding: 15px;
+    margin: auto;
+    margin-bottom: 35px;
+    background-color: rgb(52, 174, 82);
+    color: white;
+    transform: rotateZ(-3deg);
+    border-radius: 5px;
+}
+aside{
+    padding: 25px;
+    background-color: rgb(52, 174, 82);
+    border-radius: 5px;
+    position: absolute;
+    top: 41px;
+    right: 50px;
+    font-weight: bold;
+}
+
+nav{
+    text-align: center;
+    width: 500px;
+    padding: 5px;
+    margin: 30px auto;
+    background-color: rgb(18, 86, 150);
+    border-radius: 0.5rem;
+
+}
+
+
+nav ul{
+    list-style-type: none;
+}
+
+nav li{
+    display: inline-block;
+    margin-right: 2rem;
+    font-weight: bold;
+}
+
+a {
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    transition: all 0.2s;
+}
+
+a:hover{
+    color: rgb(248, 107, 40);
+    transform: translateY(-2px);
+}
+
+article{
+    text-align: justify;
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+
+article header img{
+    border-radius: 50%;
+}
+
+article header p:nth-child(2){
+    width: 360px;
+    background-color: rgba(26, 25, 25, 0.733);
+    padding: 15px;
+    margin: 15px auto;
+    font-style: italic;
+    font-weight: 700;
+    color: white;
+    border-radius: 5px;
+}
+
+.about{
+    background-color: rgb(18, 86, 150);
+    color: #fff;
+    padding: 1rem;
+    transition: all 0.1s;
+}
+
+.mission{
+    background-color: rgb(248, 107, 40);
+    color: white;
+    padding: 1rem;
+    transition: all 0.1s;
+}
+
+.education{
+    background-color: rgb(50, 167, 222);
+    color: white;
+    padding: 1rem;
+    transition: all 0.1s;
+}
+
+.contact{
+    display: flex;
+    background-color: rgb(52, 174, 82);
+    color: white;
+    padding: 1rem;
+    transition: all 0.1s;
+}
+
+.about div,
+.mission div,
+.education div {
+  width: 700px;
+  padding: 5px;
+  margin: 0 auto;
+}
+
+.about:hover{
+    transition: all 0.1s;
+}
+
+footer h4,
+footer p {
+  padding: 15px;
+}
+
+header h1,
+header img:not(article header img),
+nav,
+.about,
+.mission,
+.education,
+footer {
+  border-radius: 5px;
+}
+
+footer{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.leftfooter{
+    flex-basis: 40%;
+    margin-top: -40px;
+    margin-left: -30px;
+    font-weight: 500;
+    text-align: left;
+    padding: 15px;
+
+}
+
+.rightfooter{
+    display: block;
+    text-align: right;
+}
+
+.about p,
+.mission p,
+.education p,
+.education ol,
+.education ul,
+footer p,
+footer ul,
+nav {
+  line-height: 22.5px;
+}
+
+.about:hover,
+.mission:hover,
+.education:hover,
+.contact:hover{
+    transform: scale(1.005);
+    box-shadow: 0 0 10px rgb(49,47,47);
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -5;
+    background-image: linear-gradient(#2c2b2c, #250b0b79);
+  }
+.overlay{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -4;
+    opacity: 0.5;
+    background: black;
+}
